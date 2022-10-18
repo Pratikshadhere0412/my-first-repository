@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+
+	<script type="text/javascript"src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript"src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript"src="js/bootstrap.js"></script>
+	<script type="text/javascript"src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!--font icon cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	.menu h1{
+		margin-top:250px ;
+	}
+	#Department{
+		margin-bottom: 60px;
+	}
+.box{
+	width: 300px;
+	height: 300px;
+	border-radius:0px;
+	background:lightgray;
+	margin: 2px;
+	position: relative;
+	box-shadow: 0px 0px 15px background;
+	transition: .3s all ease-in-out;
+}
+.boxContect{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 15px;
+	text-align: center;
+
+}
+.icon{
+
+	color: #8293ff;
+	font-size: 48px;
+	padding: 15px;
+}
+.title{
+	text-align: center;
+	
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+	font-family: raleway;
+}
+.desc{
+	text-align: center;
+	
+	font-size: 14px;
+	color:black ;
+	height: 20px;
+	font-family: raleway;
+}
+.a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.box:hover{
+	background: linear-gradient(130deg,#503bff 0%,#8293ff 100%);
+	box-shadow: none;
+}
+.button1{
+
+
+	padding-left:300px ;
+	margin-top: 100px;
+	 
+}
+
+ .input-icons i{
+		position: absolute;
+	}
+	.input-icons{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.icon{
+		padding: 2px;
+		max-width: 15px;
+		text-align: center;
+	}
+	.input-field{
+		width: 80%;
+		padding: 10px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+<div class="container-fluid"id="Home">
+<div class="row p-2">
+<div class="col-5 col-md-3 text-center">
+	<img src="logo.jpeg" class="w-auto" style="height:90px">
+</div>
+<div class="col-7 col-md-9">
+<nav class="navbar navbar-expand-lg navbar-light">
+<!--<button class="navbar-toggler" type="button"data-toggle="collapse"data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation"> 
+	<span class="navbar-toggler-icon"></span>
+</button>-->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item ">
+			<a class="nav-link  text-black h4 ml-3" href="NavBar.html">Home</a>
+			<!--<div class="dropdown-menu"aria-labelledby="navbarDropdown">
+				<a class="dropdown-item"href="Home">Home1</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item"href="#">Home2</a>
+			</div>-->
+
+		</li>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item dropdown">
+		
+			<a class="nav-link dropdown-toggle text-black h4 ml-3" href="#Pages"id="navbarDropdown"role="button"data-toggle="dropdown">Pages</a>
+
+			<div class="dropdown-menu"aria-labelledby="navbarDropdown">
+				<a class="dropdown-item"href="AboutUs.html">About Us</a>
+				
+				<a class="dropdown-item"href="Appointment.html">Appointment</a>
+				<a class="dropdown-item"href="TimeTable.html">Time Table</a>
+				<a class="dropdown-item"href="SignUp.html">Sign Up</a>
+				<a class="dropdown-item"href="LoginPage.html">Login</a>
+				<a class="dropdown-item"href="Faq.html">Faq</a>
+				<a class="dropdown-item"href="MailSuccess.html">Mail Success</a>
+			</div>
+</li>
+
+
+		</li>
+
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle text-black h4 ml-3" href="#Services"id="navbarDropdown"role="button"data-toggle="dropdown">Services</a>
+						<div class="dropdown-menu"aria-labelledby="navbarDropdown">
+				<a class="dropdown-item"href="2.Services.html">Service</a>
+				
+		</li>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+			<li class="nav-item  dropdown">
+			<a class="nav-link  dropdown-toggle text-black h4  ml-3" href="#Doctors"id="navbarDropdown"role="button"data-toggle="dropdown">Doctors</a>
+			<div class="dropdown-menu"aria-labelledby="navbarDropdown">
+				<a class="dropdown-item"href="Doctor.html">Doctors</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item"href="DoctorDetails.html">Doctor Details</a>
+			</div>
+		</li>
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item dropdown">
+			<li class="nav-item">
+			<a class="nav-link dropdown-toggle text-black h4 ml-3" href="#Blog"id="navbarDropdown"role="button"data-toggle="dropdown">Blog</a>
+			<div class="dropdown-menu"aria-labelledby="navbarDropdown">
+				<a class="dropdown-item"href="Blog.html">Blogs</a>
+				
+			</div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link text-black h4 ml-3" href="6.Contact.html">Contact</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link text-black h4 ml-3" href="Gallery.html">Gallery</a>
+		</li>
+		<button class="btn btn-success ml-5">Book Apponitment</button>
+
+		</ul>
+
+</div>
+</nav>
+
+</div>
+</div>
+<div class="container-fluid">
+
+<div id="carouselExampleInterval" class="carousel slide " data-ride="carousel">
+  <div class="carousel-inner bg-primary">
+    <div class="carousel-item active" data-interval="10000">
+    <div class="row">
+    	<div class="col-md-6 col-md-4">
+    	<div class="menu">
+    		<h1>We only give <br>Best care to your eyes</h1>
+<p>Since the first days of operation of Medicapps, our teaming has been focused on building a high-qualities medicals service by Medicapps.</p>
+
+<button class="btn btn-success btn-lg">Book Appointment</button>
+<button class="btn btn-success btn-lg">About Us </button>
+   </div></div> 
+<div class="col-md-4">
+ <img src="slider1.png" class="d-block w-100 " alt="..."style="height: 600px;width: 600px;">
+    </div>
+    </div></div>
+
+
+<div class="carousel-item " data-interval="10000">
+    <div class="row">
+    	<div class="col-md-6 ">
+    	<div class="menu">
+    		<h1>Superior solutions that<br>
+help you to shine.</h1>
+<p>Since the first days of operation of Medicapps, our teaming has been focused on building a high-qualities medicals service by Medicapps.</p>
+
+<button class="btn btn-success btn-lg">Book Appointment</button>
+<button class="btn btn-success btn-lg">About Us </button>
+   </div></div> 
+<div class="col-md-4">
+ <img src="slider2.png" class="d-block w-100 " alt="..."style="height: 600px;width: 600px;">
+    </div>
+    </div></div>
+
+
+<div class="carousel-item " data-interval="10000">
+    <div class="row">
+    	<div class="col-md-6 ">
+    	<div class="menu">
+    		<h1>Find A Doctor &<br>
+Book Appointment</h1>
+<p>Since the first days of operation of Medicapps, our teaming has been focused on building a high-qualities medicals service by Medicapps.</p>
+
+<button class="btn btn-success btn-lg">Book Appointment</button>
+<button class="btn btn-success btn-lg">About Us </button>
+   </div></div> 
+<div class="col-md-4">
+ <img src="slider3.png" class="d-block w-100 " alt="..."style="height: 600px;width: 600px;">
+    </div>
+    </div></div>
+
+
+
+
+
+
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+</div>
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-12">
+			<h1>Book An Appointment</h1>
+			<p>Please feel welcome to contact our friendly reception staff with any general or medical enquiry. Our<br> doctors will receive or return any urgent calls.</p>
+</div>
+<div class="col-md-3">
+		 <div class="input-icons">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text"placeholder="Your Name">
+	</div></div>
+
+<div class="col-md-3"> 
+	<div class="input-icons">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text"placeholder="Your Email">
+	</div></div>
+	<div class="col-lg-3"> 
+	<div class="input-icons">
+            <i class="fa fa-building-o icon"></i>
+            <input class="input-field" type="text"placeholder="Department">
+	</div></div>
+<div class="col-lg-3"> 
+<button class="btn btn-success btn-lg">Get Appointment</button>
+</div>
+<div class="container mt-5 mb-5 bg-light">
+	<div class="row">
+		<div class="col-12 col-md-6">
+			<img src="about.png"class="w-100 h-100 shadow">
+		</div>
+		<div class="col-12 col-md-6 p-4 ">
+			<button class="btn btn-success btn-sm mb-4">About</button>
+			<h1 class="mb-4">Thousands Of Specialities For Any Type Diagnostic.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.</p>
+
+		
+			
+			<div class="col-6">
+				<i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="1" ><label for="box-example">Conducts eye health checkups</label>
+
+				
+   <i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="2" ><label for="box-example">Best lasik treatment</label><br>
+
+    <i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="3" ><label for="box-example">Treats minor illnesses</label>
+</div>
+
+
+<button class="btn btn-success btn-lg">More About Us</button>
+		 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h1 class="text-center mt-4">Specialities Available At Medicapps</h1>
+			<P class="text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in <br>some form.</P>
+		</div>
+		  
+	</div>
+</div>
+
+
+<div class="container mt-5 mb-5 bg-light">
+	<div class="row">
+		<div class="col-12 col-md-6 p-4 ">
+			<img src="image1.jpeg"class="w-100 h-100">
+		</div>
+		<div class="col-12 col-md-6 p-4">
+			<h1 class="mb-4">Cardiology</h1>
+			<i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="1" ><label for="box-example">Get the oars in the water and start rowing</label><br>
+
+				
+   <i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="2" ><label for="box-example">Introspection is the trick.</label><br>
+    <i class="fa-success fa-square-check"></i>
+    <input id="box-example" type="checkbox" value="3" ><label for="box-example">Most people believe that success is difficult.</label>
+
+    <p class="mt-5">For those of you who are serious about having more, doing more, giving more and being more, success is achievable with some understanding of what to do, some discipline around planning and execution of those plans and belief that you can achieve your desires.</p>
+
+    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non leo nunc. Vivamus lacinia massa nec sem sagittis.</p>
+
+    <button class="btn btn-success btn-lg">View Speciality</button>
+		</div>
+
+	</div>
+</div>
+<div class="menu text-center mt-3">
+	<h2 class="">Services Provided By Medicapps</h2>
+	<p class="mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in<br> some form.</p>
+</div>
+
+	<div class="container"style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;height: 600px;">
+
+		<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-ambulance fa-4x ml-5 mt-5" aria-hidden="true"></i>
+				<h1 class="title">Fast Ambulance</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-stethoscope fa-4x ml-5 mt-5"aria-hidden="true"></i>
+				<h1 class="title">Dental Specialist</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-microphone fa-4x ml-5 mt-5"aria-hidden="true"></i>
+				<h1 class="title">Modern Laboratory</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+
+<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-user fa-4x ml-5 mt-5" aria-hidden="true"></i>
+				<h1 class="title">Children Center</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-heart fa-4x ml-5 mt-5"aria-hidden="true"></i>
+				<h1 class="title">Heart Surgery</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+<div class="box">
+			<div class="boxContent">
+				<i class="fa fa-hand-paper-o fa-4x ml-5 mt-5"aria-hidden="true"></i>
+				<h1 class="title">Care Advice</h1>
+				<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+			</div>
+			<a href="#"></a>
+		</div>
+
+
+	</div>
+	<div class="row mt-5 mr-3 bg-primary"style="height: 250px;">
+		<div class="col-6 col-md-3 text-center">
+			<i class="fa fa-hospital-o fa-4x mt-5" aria-hidden="true"></i>
+<h1 class=" text-white mt-3">1250</h1>
+<h5 class="text-white mt-3 ">Hospital Rooms</h5>
+</div>
+
+<div class="col-6 col-md-3 text-center">
+			<i class="fa fa-stethoscope fa-4x mt-5" aria-hidden="true"></i>
+<h1 class=" text-white mt-3">350</h1>
+<h5 class="text-white mt-3 ">Specialist Doctors</h5>
+</div>
+
+<div class="col-6 col-md-3 text-center">
+			<i class="fa fa-smile fa-4x mt-5" aria-hidden="true"></i>
+<h1 class=" text-white mt-3">2500</h1>
+<h5 class="text-white mt-3 ">Happy Patients</h5>
+</div>
+
+<div class="col-6 col-md-3 text-center">
+			<i class="fa fa-book fa-4x mt-5" aria-hidden="true"></i>
+<h1 class=" text-white mt-3">35</h1>
+<h5 class="text-white mt-3 ">Years of Experience</h5>
+</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 ">
+			<h1 class="text-center font-weight-bold mt-5">Here Is Some Of Our <br>
+Latest Cases</h1>
+<p class="text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in <br>some form.</p>
+</div>
+
+
+<!--<a href="pf1.jpeg" class="btn btn-outline-primary">Show All</a>
+<a href="pf2.jpeg" class="btn btn-outline-primary">Cardiology</a>
+<a href="pf3.jpeg" class="btn btn-outline-primary">Diabetes</a>
+<a href="pf4.jpeg" class="btn btn-outline-primary">Pediatric</a>
+<a href="pf5.jpeg" class="btn btn-outline-primary"> Neurosurgery</a>-->
+
+<p>
+	<a class="btn btn-outline-primary ml-5"data-toggle="collapse"href="#collapseExample"role="button"aria-expanded="false"aria-controls="collapseExample">Show All</a>
+	<p><div class="collapse"id="collapseExample1">
+		<div class="card card-body">
+			<img src="pf1.jpeg">
+			<img src="pf2.jpeg">
+			
+	</div>
+</div>
+
+<p>
+	<a class="btn btn-outline-primary ml-5"data-toggle="collapse"href="#collapseExample"role="button"aria-expanded="false"aria-controls="collapseExample">Cardiology</a>
+	<p><div class="collapse"id="collapseExample2">
+		<div class="card card-body">
+			<img src="pf3.jpeg">
+			</div>
+</div>
+
+<p>
+	<a class="btn btn-outline-primary ml-5"data-toggle="collapse"href="#collapseExample"role="button"aria-expanded="false"aria-controls="collapseExample">Diabetes</a>
+	<p><div class="collapse"id="collapseExample3">
+		<div class="card card-body">
+			<img src="pf4.jpeg">
+			</div>
+</div>
+
+<p>
+	<a class="btn btn-outline-primary ml-5"data-toggle="collapse"href="#collapseExample"role="button"aria-expanded="false"aria-controls="collapseExample">Pediatric</a>
+	<p><div class="collapse"id="collapseExample4">
+		<div class="card card-body">
+			<img src="pf5.jpeg">
+			</div>
+</div>
+
+<p>
+	<a class="btn btn-outline-primary ml-5"data-toggle="collapse"href="#collapseExample"role="button"aria-expanded="false"aria-controls="collapseExample">Neurosurgery</a>
+	<p><div class="collapse"id="collapseExample5">
+		<div class="card card-body">
+			<img src="pf6.jpeg">
+			</div>
+</div>
+
+
+
+
+<div class="team">
+ <div class="container">
+    <h1 class="text-center"></h1>
+  <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="pf1.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+     
+     </div>
+    <span class="text-muted">
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="pf2.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+      
+     </div>
+    <span class="text-muted">
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="pf3.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+      
+     </div>
+    <span class="text-muted">
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="pf4.jpeg" class="img-fluid" alt="team">
+     <div class="des">
+   
+     </div>
+
+    <span class="text-muted"></span>
+     
+            
+   </div>
+  </div>
+	</div>
+<h1 class="text-center mt-5">Our Outstanding Team Is Active To <br>Help You!</h1>
+<p class="text-center mt-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in<br> some form.</p>
+
+<!-- Team section -->
+<div class="team">
+ <div class="container">
+    <h1 class="text-center"></h1>
+  <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="doctor1.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+     Cardiologist
+     </div>
+    <span class="text-muted">Dr.Felica Queen
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="doctor2.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+      Neurologist
+     </div>
+    <span class="text-muted">Dr.Alice Williams
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="doctor3.jpeg" class="img-fluid" alt="team">
+    <div class="des">
+      Physician Assistant
+     </div>
+    <span class="text-muted">Dr.Paul Flavius
+</span>
+   </div>
+   <div class="col-lg-3 col-md-3 col-sm-12 item">
+    <img src="doctor4.jpeg" class="img-fluid" alt="team">
+     <div class="des">
+     Physician Assistant
+
+     </div>
+
+    <span class="text-muted">Dr.Michael Bean</span>
+     
+            
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+</div></div></div></div>
+
+
+
+
+
+	
+<h1 class="text-center mt-5">We’re Connected All Time To Help Our <br>Patients</h1>
+<p class="text-center mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in <br>some form.</p>
+
+<div class="container">
+	<div class="row"style=" box-shadow: 0px 0px 25px background;">
+		<div class="col-12">
+	<h5>Feel free to contact us for any query.</h5>		
+<div class="row">
+	<div class="col-md-9 mb-md-0 mb-5">
+<form id="contat-form"name="contact-form">
+<div class="row">
+	 <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control"placeholder="Your name">
+                            <label for="name" class=""></label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control"placeholder="Your Subject">
+                            <label for="email" class=""></label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+                   <div class="row">
+                <!--Grid row-->
+                <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control"placeholder="Your email">
+                            <label for="name" class=""></label>
+                        </div>
+                    </div>
+                <!--Grid row-->
+                        <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control"placeholder="Your Phone">
+                            <label for="name" class=""></label>
+                        </div>
+                    </div></div>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"placeholder="Your message"></textarea>
+                            <label for="message"></label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-success btn-lg" onclick="document.getElementById('contact-form').submit();">Submit Message</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-5">
+            	<h5 class="font-weight-bold ">Contact information</h5>
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                	<h6>Medical Address</h6>
+                    <p class="text-muted">3909 Witmer Rd, Niagara Falls, NY 14305, United States</p>
+                </li>
+
+                <li><i class="fa fa-clock-o mt-2 fa-2x"></i>
+                    <h5>Opening hours</h5>
+                    <h6 class="text-muted">Mon - Tue 08:30 - 18:30<br>
+                    Wed- Thu 07:00 - 14:30</h6>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                	<h5>Email Support</h5>
+                    <p class="text-muted">medicapps@gmail.com<br>
+medicapps@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+   <!--Section: Contact v.2-->
+</div>		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-info text-center text-white mt-5">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Appointment</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">LoginPage</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Services</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Gallery</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Faq</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Mail Success</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Doctor</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Doctor Details</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>-->
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
